@@ -32,10 +32,10 @@ public class SinglyLinkedList {
     public void display(){
         ListNode current = head;
         while (current != null){
-            System.out.println(current.data+" --> ");
+            System.out.print(current.data+" --> ");
             current = current.next;
         }
-        System.out.println("null");
+        System.out.print("null");
     }
 
 
