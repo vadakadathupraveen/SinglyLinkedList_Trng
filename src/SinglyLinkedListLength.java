@@ -12,7 +12,10 @@ public class SinglyLinkedListLength {
 
     }
 
-    public void displaylength() {
+    public int displaylength() {
+        if (head == null) {
+            return 0;
+        }
         int length = 0;
         ListNode current = head;
         while (current != null) {
@@ -20,8 +23,8 @@ public class SinglyLinkedListLength {
             System.out.print(current.data + " --> ");
             current = current.next;
         }
-        System.out.print("null");
-        System.out.println("\nLength of the ListNode :" + length);
+        System.out.print("null\n");
+        return length;
     }
 
 
@@ -36,7 +39,7 @@ public class SinglyLinkedListLength {
         second.next = third;
         third.next = fourth;
 
-        sl.displaylength();
+        System.out.println("Length of LinkedList: " + sl.displaylength());
 
     }
 }
