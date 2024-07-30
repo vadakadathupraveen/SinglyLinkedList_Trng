@@ -29,14 +29,14 @@ public class SinglyLinkedListInsertAtFirst {
         sll.insertToFirst(444444444);
     }
 
-    private void insertToFirst(int i) {
+    public void insertToFirst(int i) {
         ListNode toFirst = new ListNode(i);
         toFirst.next = head;
         head = toFirst;
         display();
     }
 
-    private void display() {
+    public void display() {
         ListNode current = head;
         while (current!=null){
             System.out.print(current.data+" --> ");

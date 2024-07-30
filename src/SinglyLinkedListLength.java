@@ -39,6 +39,8 @@ public class SinglyLinkedListLength {
         second.next = third;
         third.next = fourth;
 
+
+
         System.out.println("Length of LinkedList: " + sl.displaylength());
 
     }
